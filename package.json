@@ -1,0 +1,29 @@
+{
+  "name": "coinmarket",
+  "version": "1.0.0",
+  "description": "coin market api with authentication",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write src/**/*.js",
+    "dev": "cross-env NODE_ENV=development nodemon src/server.js",
+    "prod": "cross-env NODE_ENV=production node src/server.js"
+  },
+  "author": "Dedi",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.13",
+    "winston": "^3.3.3",
+    "winston-mongodb": "^5.0.7"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.1"
+  }
+}
