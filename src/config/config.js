@@ -9,7 +9,7 @@ const development = {
     uri: process.env.DEV_DB_URI,
   },
   jwt: {
-    secret: process.env.PROD_JWT_SECRET,
+    secret: process.env.DEV_JWT_SECRET,
   },
   cm: {
     apiKey: process.env.DEV_COIN_MARKET_API_KEY,
