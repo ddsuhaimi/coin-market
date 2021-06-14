@@ -100,6 +100,7 @@ For production, the server will run on whatever port defined in `process.env.POR
 
 ---
 ## API Reference
+:information_source: You can get the postman collection on `.submit` folder.
 
 #### Register user
 
@@ -136,9 +137,16 @@ For production, the server will run on whatever port defined in `process.env.POR
 <br/>
 ---
 ## Screenshots
+Register user: POST /api/users
 
 ![api/users](https://i.postimg.cc/HLJRbDQZ/api-users.png)
+
+Login user: POST /api/users/login
+
 ![api/users/login](https://i.postimg.cc/2S9gq8BL/api-users-login.png)
+
+Get cryptocurrency list: GET /api/listings
+
 ![api/listings](https://i.postimg.cc/x11WTbqS/api-listings.png)
 
 ---
