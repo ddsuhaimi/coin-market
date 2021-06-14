@@ -31,7 +31,7 @@ Install with npm:
 **Step 1.** Go to project directory
 
 ```
-cd coinMarket
+cd coin-market
 ```
 
 **Step 2.** Install all dependecies
