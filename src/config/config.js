@@ -18,7 +18,8 @@ const development = {
 
 const production = {
   app: {
-    port: parseInt(process.env.PROD_APP_PORT),
+    // port: parseInt(process.env.PROD_APP_PORT),
+    port: parseInt(process.env.PORT),
   },
   db: {
     uri: process.env.PROD_DB_URI,
