@@ -114,6 +114,7 @@ For production, the server will run on whatever port defined in `process.env.POR
 | `email`    | `string` | **Required**. Your email    |
 | `password` | `string` | **Required**. Your password |
 <br/>
+
 #### Login user
 
 ```http
@@ -125,6 +126,7 @@ For production, the server will run on whatever port defined in `process.env.POR
 | `email`    | `string` | **Required**. Your email    |
 | `password` | `string` | **Required**. Your password |
 <br/>
+
 #### Get cryptocurrency list
 
 ```http
@@ -136,6 +138,7 @@ For production, the server will run on whatever port defined in `process.env.POR
 | `Authorization` | `string` | **Required**. Your token, created after register |
 <br/>
 ---
+
 ## Screenshots
 Register user: POST /api/users
 
