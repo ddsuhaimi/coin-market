@@ -11,7 +11,7 @@ If you want to test it without running locally, you can make request to [coin-ma
 ## Features
 
 - Logging to various transport (file, console, and MongoDB)
-- Storing hashing password instead of plaintext
+- Storing hashed password instead of plaintext
 - Automatically generated access token for new user
 
 ---
