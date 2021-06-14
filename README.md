@@ -4,7 +4,7 @@ Simple API for getting cyptocurrencies data (utilizing third party Coin Market A
 
 ## Demo
 
-Insert gif or link to demo
+If you want to test it without running locally, you can make request to [coin-market-node.herokuapp.com/api](https://coin-market-node.herokuapp.com/api)
 
 ---
 
@@ -12,8 +12,7 @@ Insert gif or link to demo
 
 - Logging to various transport (file, console, and MongoDB)
 - Storing hashing password instead of plaintext
-- Automatically generated acces token for new user
-- CORS enabled
+- Automatically generated access token for new user
 
 ---
 
@@ -43,12 +42,11 @@ npm install
 
 **Step 3.** Fill in environment variables
 
-    a) Open file `.env.example`
+a) Open file `.env.example`
 
 b) Fill in all environment variables
 
 ```
-PROD_APP_PORT = 5000
 PROD_DB_URI = <mongodb uri>
 PROD_JWT_SECRET = <jwt secret>
 PROD_COIN_MARKET_API_KEY = <coin market api key>
@@ -67,15 +65,20 @@ DEV_COIN_MARKET_API_KEY = <coin market api key>
 npm run dev
 ```
 
+for development. or 
+```
+npm run prod
+```
+
+for production.
+
 ---
 
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
 
-**Notes:** Those that starts with `PROD` are for production and `DEV` are for development.
-
-`PROD_APP_PORT `
+**Notes:** Those that starts with `PROD` are for production and `DEV` are for development. 
 
 `PROD_DB_URI`
 
@@ -87,12 +90,15 @@ To run this project, you will need to add the following environment variables to
 
 `DEV_DB_URI`
 
-`DEV_JWT_SECRE`
+`DEV_JWT_SECRET`
 
 `DEV_COIN_MARKET_API_KEY`
 
----
+<br />
 
+For production, the server will run on whatever port defined in `process.env.PORT`.
+
+---
 ## API Reference
 
 #### Register user
@@ -127,7 +133,15 @@ To run this project, you will need to add the following environment variables to
 | Header          | Type     | Description                                      |
 | :-------------- | :------- | :----------------------------------------------- |
 | `Authorization` | `string` | **Required**. Your token, created after register |
+<br/>
+---
+## Screenshots
 
+![api/users](https://i.postimg.cc/HLJRbDQZ/api-users.png)
+![api/users/login](https://i.postimg.cc/2S9gq8BL/api-users-login.png)
+![api/listings](https://i.postimg.cc/x11WTbqS/api-listings.png)
+
+---
 ## Folder structure
 ```
 +-- .env

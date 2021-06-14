@@ -3,7 +3,7 @@ const env = process.env.NODE_ENV; // 'development' or 'production'
 
 const development = {
   app: {
-    port: parseInt(process.env.DEV_APP_PORT),
+    port: parseInt(process.env.DEV_APP_PORT) || 5005,
   },
   db: {
     uri: process.env.DEV_DB_URI,
@@ -18,8 +18,7 @@ const development = {
 
 const production = {
   app: {
-    // port: parseInt(process.env.PROD_APP_PORT),
-    port: parseInt(process.env.PORT),
+    port: parseInt(process.env.PORT) || 5005,
   },
   db: {
     uri: process.env.PROD_DB_URI,
